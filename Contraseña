@@ -1,0 +1,19 @@
+MIN = 8
+
+def validar_contraseña():
+    pw1 = input("Ingresa la contraseña: ")
+    pw2 = input("Repite la contraseña: ")
+
+    if len(pw1) < MIN:
+        print(f"La contraseña debe tener al menos {MIN} caracteres.")
+        return
+
+    if pw1 != pw2:
+        print("Las contraseñas no coinciden.")
+        return
+
+    print("Contraseña válida ✅")
+
+validar_contraseña()
+
+print("¡Gracias por usar mi verificador de contraseñas! ")
